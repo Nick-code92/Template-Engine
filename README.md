@@ -10,3 +10,7 @@ The app will run as a Node CLI to gather information about each employee.
 * Create or update classes to pass a single test case
 * Repeat
 User can use the CLI to generate an HTML page that displays information about their team.
+
+### check it out 
+![]()
+![]()
