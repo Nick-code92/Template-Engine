@@ -12,5 +12,5 @@ The app will run as a Node CLI to gather information about each employee.
 User can use the CLI to generate an HTML page that displays information about their team.
 
 ### check it out 
-![Repository](https://github.com/Nick-code92/Template-Engine)
-![Gif]()
+[Repository](https://github.com/Nick-code92/Template-Engine)
+[Gif]()
