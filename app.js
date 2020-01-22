@@ -32,7 +32,7 @@ function employeeType() {
         },
         {
             type: "input",
-            message: "What is your ID number?",
+            message: "What is your user ID number?",
             name: "ID"
         },
         {
@@ -42,21 +42,14 @@ function employeeType() {
         }
     ]).then(answers => {
         tempemployee=answers;
-        // employeeCards.push(answers);
-        // console.log(employeeCards)
-        // console.log(answers.position)
         console.log("inside chk position fx")
     if (answers.position === 'Intern') {
-        //console.log("intern");
             typeIntern();
         } else if (answers.position === 'Engineer') {
-            //console.log("Engineer");
             typeEngineer();
         } else if (answers.position === 'Manager') {
-            //console.log("Manager");
             typeManager();
         }
-        //return answers.position;
     })
 }
 
@@ -64,16 +57,12 @@ function typeIntern() {
     inquirer.prompt([
         {
             type: "input",
-            message: "Which school do you go to?",
+            message: "What school do you go to?",
             name: "school"
         }
     ]).then(answer => {
-        //finished the last part of the temp obj
-        //{ position: 'Intern', ID: '1', email: 'email', school: 'school' }
         tempemployee.school = answer.school;
         console.log(tempemployee);
-        //then push final obj to array
-        //[ { position: 'Intern', ID: '1', email: 'email', school: 'school' } ]
         employeeCards.push(tempemployee)
         console.log(employeeCards)
 
@@ -83,16 +72,12 @@ function typeEngineer() {
     inquirer.prompt([
         {
             type: "input",
-            message: "What is your github name?",
+            message: "What is your github username?",
             name: "githubName"
         }
     ]).then(answer => {
-        //finished the last part of the temp obj
-        //{ position: 'Intern', ID: '1', email: 'email', github: 'school' }
         tempemployee.github = answer.githubName;
         console.log(tempemployee);
-        //then push final obj to array
-        //[ { position: 'Intern', ID: '1', email: 'email', github: 'school' } ]
         employeeCards.push(tempemployee)
         console.log(employeeCards)
 
@@ -106,12 +91,8 @@ function typeManager() {
             name: "officeNumber"
         }
     ]).then(answer => {
-        //finished the last part of the temp obj
-        //{ position: 'Intern', ID: '1', email: 'email', officeNumber: 'school' }
         tempemployee.officeNumber = answer.officeNumber;
         console.log(tempemployee);
-        //then push final obj to array
-        //[ { position: 'Intern', ID: '1', email: 'email', officeNumber: 'school' } ]
         employeeCards.push(tempemployee)
         console.log(employeeCards)
 
